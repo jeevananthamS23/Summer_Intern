@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e63946;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav .cta {
+  background: #e63946;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffece7;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 10px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.how-it-works {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.how-it-works ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+.how-it-works li {
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  background: #fce8e6;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.demo {
+  background: #d3f1ff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.demo .btn {
+  margin-top: 20px;
+  background: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
