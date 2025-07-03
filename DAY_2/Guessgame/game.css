@@ -1,0 +1,72 @@
+*{
+    background-color: black;
+}
+
+#button{
+    margin: 20px;
+    height: 40px;
+    width: 70px;
+    background-color:white;
+}
+#head{
+    color: white;
+    text-align: center;
+}
+
+#button1{
+
+    height: 40px;
+    width: 70px;
+    background-color:white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#guess{
+    height: 40px;;
+    width: 150px;
+    color: white;
+    font-size: 30px;;
+    margin-top: 60px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+#check{
+    margin-top: 20px;
+    margin-left: 124px;
+    height: 30px;
+    width: 70px;
+    background-color:white;
+}
+
+#discon{
+    color:white
+}
+
+#score{
+    color:white
+}
+#highscore{
+    color:white
+}
+
+#downpart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#downpart,#part2,#discon{
+        margin-top: 28px;
+        margin-left:50px ;
+}
+#downpart,#part2,#score{
+        margin-top: 30px;
+        margin-left:50px ;
+}
+
+#downpart,#part2,#highscore{
+        margin-top: 32px;
+        margin-left:50px ;
+}
+

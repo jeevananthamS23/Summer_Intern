@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+
+    <header>
+        <button  id="button">Again</button>
+        <h1  id="head">Guess My Number</h1>
+        <br>
+
+    </header>
+
+    <div style="position: relative; text-align: center; margin: 40px 0;">
+<hr style="border: 2px solid #ccc;">
+
+  <div style="
+      display: inline-block;
+      position: absolute;
+      top: -33px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 20px 50px;
+      border: 2px solid black;
+      border-radius: 4px;
+      font-size:30px;
+    ">
+    ?
+  </div>
+</div>
+<div id="downpart">
+    <div id="part1">
+    <input type="number" id="guess" placeholder="Guess"/>
+    <br>
+    <button id="check">Check</button>
+    </div>
+  <div id="part2">
+          <h3 id="discon">Start Guessing....</h3>
+          <h4 id="score">Score:40</h4>
+          <h5 id="highscore">Score:40</h5>
+  </div>
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
