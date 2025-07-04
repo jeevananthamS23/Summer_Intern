@@ -1,4 +1,5 @@
-let scores = [0, 0];
+let scores1 =0;
+let scores2=0;
     let currentScore = 0;
     let activePlayer = 0;
     let playing = true;
@@ -17,7 +18,7 @@ let scores = [0, 0];
     }
 
     function updateScore() {
-      document.getElementById(`score${activePlayer + 1}`).textContent = scores[activePlayer];
+      document.getElementById(`score${activePlayer + 1}`).textContent = activePlayer===0?scores1:scores2;
     }
 
     function switchPlayer() {
@@ -45,19 +46,41 @@ let scores = [0, 0];
     function holdScore() {
       if (!playing) return;
       
-      scores[activePlayer] += currentScore;
+      switch(activePlayer){
+        case 0:
+          scores1+=currentScore;
+          break;
+          case 1:
+          scores2+=currentScore;
+          break;
+      }
       updateScore();
       
-      if (scores[activePlayer] >= 100) {
-        playing = false;
-        alert(`Player ${activePlayer + 1} wins!`);
-      } else {
-        switchPlayer();
+      switch(activePlayer){
+        case 0:
+               if(scores1>=100){
+                 playing = false;
+                alert(`Player ${activePlayer + 1} wins!`);
+               }
+               else{
+                 switchPlayer();
+               }
+               break;
+            case 1:
+               if(scores2>=100){
+                 playing = false;
+                alert(`Player ${activePlayer + 1} wins!`);
+               }
+               else{
+                 switchPlayer();
+               }
+               break;
       }
     }
 
     function newGame() {
-      scores = [0, 0];
+      scores1 =0;
+      scores2=0;
       currentScore = 0;
       activePlayer = 0;
       playing = true;
