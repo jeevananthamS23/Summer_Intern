@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="dicegame.css">
+</head>
+<body>
+  <div id="panel">
+    <div id="part1" class="active">
+      <h1 style="color: black;text-align:center; margin-top:50px;font-size:30px;">Player 1</h1>
+      <h1 id="score1" style="color: rgb(196, 49, 164);text-align:center; margin-top:65px;font-size:60px;">0</h1>
+      <div id="ins1">
+        <h2 style="color: white; text-align:center;font-size:14px; margin-top:8px;">CURRENT</h2>
+        <h2 id="current1" style="color: white; text-align:center;font-size:25px; margin-top:10px;">0</h2>
+      </div>
+    </div>
+
+    <div id="center-controls">
+      <button id="new-game-btn" onclick="newGame()">🎲 NEW GAME</button>
+      <img id="dice" src="images/dice1.jpg" alt="Dice" onclick="rollDice()" />
+      <button id="roll-btn" class="game-btn" onclick="rollDice()">🎲 ROLL DICE</button>
+      <button id="hold-btn" class="game-btn" onclick="holdScore()">💎 HOLD</button>
+    </div>
+      
+    <div id="part2">
+      <h1 style="color: black;text-align:center; margin-top:50px;font-size:30px;">Player 2</h1>
+      <h1 id="score2" style="color: rgb(196, 49, 164);text-align:center; margin-top:65px;font-size:65px;">0</h1>
+      <div id="ins2">
+        <h2 style="color: white; text-align:center;font-size:14px;margin-top:8px;">CURRENT</h2>
+        <h2 id="current2" style="color: white; text-align:center;font-size:25px; margin-top:10px;">0</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="dicegame.js"></script>
+</body>
+</html>
