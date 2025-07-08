@@ -1,0 +1,54 @@
+
+#panel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#part1 {
+  height: 500px;
+  width: 400px;
+}
+
+#part1 {
+  border: 3px solid rgb(226, 180, 210);
+  opacity: 1;
+}
+
+
+#ins1 {
+  border: 1px solid rgb(197, 91, 183);
+  background-color: rgb(235, 71, 213);
+  margin-top: 80px;
+  margin-left: 105px;
+  height: 80px;
+  width: 170px;
+}
+
+
+
+.game-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+#roll-btn, #hold-btn {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+.p1{
+    color: black;text-align:center; margin-top:50px;font-size:30px;
+}
+
+.p11{
+    color:rgb(227, 167, 167);text-align:center; margin-top:65px;font-size:60px;
+}
+
+.p111{
+    color: white; text-align:center;font-size:14px; margin-top:8px;
+}
+
+#current1{
+    color: white; text-align:center;font-size:25px; margin-top:10px;
+}
