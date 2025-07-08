@@ -1,0 +1,47 @@
+how web works and it flow in backend with diagram
+
+
+HTTP:
+Plain Text: Data is sent in plain text, easily readable by anyone who intercepts the communication. 
+Vulnerable: Susceptible to eavesdropping and man-in-the-middle attacks. 
+Port 80: Typically uses port 80 for communication. 
+
+HTTPS:
+Encrypted: Uses SSL/TLS encryption to secure the data transmitted between browser and server. 
+Secure: Protects against eavesdropping and data tampering. 
+Port 443: Typically uses port 443 for communication. 
+Authentication: Verifies the identity of the website, ensuring you're connecting to the correct server. 
+Data Integrity: Ensures data is not altered during transmission. 
+
+
+--ReactJs:
+ -- export and import in react
+ * In react file we allow only one export default is allowed in one file.
+
+ --fragment:
+        * fragment is used to group a multiple elements without adding extra nodes to the dom.
+
+ --react Lifecycle with diagram:
+ * mounting: The Phase in which the component is begin created and inserted into the Dom.
+ * updating: The Phase in which the component is updated and re rendered in the Dom
+
+--props:
+*props are used to pass data from parent componet to child component.
+*props are used to pass data from one component to another component.
+*props are read only and canot be modified by the child component.
+
+--pros drilling:
+*props derilling is the process of passing data from parent component to child component and then to granchild component.
+
+
+--usesate:
+*usesate is a  hook that allows us to and manage state in a functional component.
+*it returns an array with two elements: the current state value and a functions to update that state value.
+
+
+-- separate componets:
+*separate components are used to break down a large component inot smaller,reusable components.
+*this help in better organization,maintainablity and reusablity of code.
+
+
+--useEffects
