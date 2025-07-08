@@ -1,0 +1,37 @@
+.table {
+  border: 1px solid black;
+  width:600px;
+  margin-left: 500px;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+.page{
+  display: flex;
+  justify-content: space-evenly;
+  border:5px solid black;
+  color:black;
+  background-color: white;
+  width: 600px;
+  height:100px;
+  margin-left: 100px;
+  margin-right:40px;
+ 
+}
+.page button{
+  margin-top: 18px;
+  height: 60px;
+  width:100px;
+}
+
+.page span{
+  margin-top: 40px;
+  text-align: center;
+  font-size: medium;
+}
+.tablecnt{
+  display: flex;
+}
