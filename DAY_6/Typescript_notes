@@ -1,0 +1,101 @@
+// Declare a string variable
+let username: string = "Jeevanantham";
+
+// Declare a number variable
+let age: number = 23;
+
+// Declare a boolean variable
+let isStudent: boolean = true;
+
+// Declare a variable without initialization (optional)
+let city: string;
+
+// Declare a variable that can be any type
+let randomData: any = "Could be anything";
+
+// Use 'const' for constant values
+const country: string = "India";
+
+// Use 'var' (not recommended)
+var legacyVar: string = "Old way";
+
+// Template string (string interpolation)
+let greeting: string = `Hello, my name is ${username} and I'm ${age} years old.`;
+
+console.log(greeting);
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Function without parameters
+function sayHello(): void {
+  console.log("Hello!");
+}
+
+// Function with parameters
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+// Function with optional parameter
+function greet(name: string, message?: string): string {
+  return `Hi ${name}, ${message || "Welcome!"}`;
+}
+
+// Function with default parameter
+function multiply(x: number, y: number = 2): number {
+  return x * y;
+}
+
+// Arrow function
+const subtract = (a: number, b: number): number => a - b;
+
+// Function expression
+const divide = function(a: number, b: number): number {
+  return a / b;
+};
+
+// Call the functions
+sayHello(); // Output: Hello!
+console.log(add(5, 3)); // Output: 8
+console.log(greet("Jeevan")); // Output: Hi Jeevan, Welcome!
+console.log(multiply(4)); // Output: 8
+console.log(subtract(10, 4)); // Output: 6
+console.log(divide(10, 2)); // Output: 5
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// String array
+let fruits: string[] = ["Apple", "Banana", "Orange"];
+
+// Number array
+let scores: number[] = [90, 85, 78];
+
+// Mixed array using union types
+let mixed: (string | number)[] = ["Math", 95, "English", 88];
+
+// Array of objects
+let users: { name: string, age: number }[] = [
+  { name: "Jeevan", age: 23 },
+  { name: "Ram", age: 25 }
+];
+
+// Array methods
+fruits.push("Grapes");           // Add item
+let firstFruit = fruits[0];      // Access item
+let removedFruit = fruits.pop(); // Remove last item
+
+// Loop through array
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+// Using map
+let upperFruits = fruits.map(fruit => fruit.toUpperCase());
+console.log(upperFruits);
+
+// Filter example
+let highScores = scores.filter(score => score > 80);
+console.log(highScores); // Output: [90, 85]
