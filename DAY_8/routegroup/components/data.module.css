@@ -1,0 +1,25 @@
+.card{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    margin-top: 120px;
+    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h1{
+    text-align: center;
+}
+
+.card img{
+    margin-left: 140px;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+
+.card p{
+    margin-left: 50px;
+    margin-top: 50px;
+}

@@ -1,0 +1,9 @@
+body{
+    background-image: url("/Main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-family: system-ui,Roboto;
+}

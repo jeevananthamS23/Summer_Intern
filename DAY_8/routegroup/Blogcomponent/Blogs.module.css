@@ -1,0 +1,76 @@
+.blog{
+    background-image: url('/background2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.blog {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: none;
+  height: 850px;
+  width: 1300px;
+  color: black;
+  margin-top: 80px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+  opacity: 1;
+}
+
+
+
+.blog h1 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.card {
+  border: 2px solid black;
+  height: 250px;             
+  width: 250px;            
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+  height: 70px;                      
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card button {
+  margin: 10px auto;
+  height: 30px;
+  width: 100px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}

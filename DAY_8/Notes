@@ -1,0 +1,97 @@
+* for the router group you need to used the () router creation in app folder.
+* can not create a same page 
+
+
+/* 
+==============================
+📘 Concept: Group Router in Next.js
+==============================
+
+✅ What is Group Routing?
+------------------------------
+Group Routing in Next.js is a feature of the App Router (introduced in Next.js 13+)
+that allows you to group related routes in the file system without affecting the URL path.
+
+This is done using folders with names wrapped in parentheses `()`.
+
+🧠 Purpose:
+- Organize routes by context (e.g., auth, dashboard, admin)
+- Use different layouts for different groups
+- Keep clean and readable URLs
+- Combine with advanced routing (like parallel routes)
+
+📦 Example Folder Structure:
+
+app/
+├── (auth)/
+│   ├── login/
+│   │   └── page.js
+│   └── register/
+│       └── page.js
+├── (dashboard)/
+│   ├── profile/
+│   │   └── page.js
+
+✅ Resulting URLs:
+- /login
+- /register
+- /profile
+
+📌 Note:
+The `(auth)` and `(dashboard)` folders DO NOT appear in the final URL.
+They are only used for organizing code and scoping layouts.
+
+📁 layout.js usage in group:
+Each group can have its own layout:
+
+app/(auth)/layout.js → applies only to login and register
+app/(dashboard)/layout.js → applies only to dashboard pages
+*/
+
+
+/*
+==============================
+📘 Concept: loading.js in Next.js
+==============================
+
+✅ What is loading.js?
+------------------------------
+`loading.js` is a special file in the App Router system that shows a loading UI while
+a route or layout is being fetched or rendered.
+
+When you navigate to a route and it's not instantly ready,
+Next.js will automatically render the loading.js component from the same folder.
+
+🧠 Purpose:
+- Improve user experience by displaying a loading spinner, skeleton, or placeholder
+- Used in route transitions, dynamic segments, or when lazy-loading data
+
+📦 Example Folder Structure:
+
+app/
+├── dashboard/
+│   ├── page.js         ← actual page
+│   ├── loading.js      ← temporary loading screen
+
+✅ How It Works:
+When the user visits `/dashboard`, `loading.js` is shown first until `page.js` finishes rendering.
+
+✅ Code Example:
+
+// app/dashboard/loading.js
+export default function Loading() {
+  return <p>Loading dashboard...</p>;
+}
+
+🧠 Notes:
+- No need to import or use manually — it’s auto-rendered
+- You can define loading.js in any segment
+- You should NOT perform data fetching or logic inside loading.js
+- Ideal for showing loading spinners or skeleton screens
+
+📌 layout.js + loading.js:
+If your layout contains async content or children, you can also place a `loading.js` alongside it
+to indicate global loading behavior during route changes.
+
+*/
+
