@@ -25,11 +25,13 @@ const Form = ({ val }) => {
     // localStorage.setItem('formData', JSON.stringify(formData));
     // alert('Form data saved locally!');
     const check=name.includes("Admin");
+    const admin="Admin";
+    const user="user";
     if(check){
-    router.push(`/adminsee`);
+    router.push(`/adminsee?name=${admin}`);
     }
     else if(!check){
-      router.push(`/usersee`);
+      router.push(`/usersee?name=${user}`);
     }
   };
 

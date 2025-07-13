@@ -1,10 +1,10 @@
 import CreDEL from "@/Blogcomponent/Create_Delete";
 
-const Create=()=>{
+const Delete=()=>{
     return(
         <div>
             <CreDEL></CreDEL>
         </div>
     )
 }
-export default Create;
+export default Delete;
